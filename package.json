@@ -1,0 +1,26 @@
+{
+  "name": "a11y-scan-engine",
+  "version": "0.1.0",
+  "description": "Automated WCAG accessibility scanner for a single web page, using headless Chromium and axe-core.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "a11y-scan": "bin/a11y-scan.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "scan": "node bin/a11y-scan.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["accessibility", "a11y", "wcag", "axe-core", "playwright", "scanner"],
+  "author": "Guéber Dorzilmé",
+  "license": "MIT",
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "playwright": "^1.49.1"
+  }
+}
